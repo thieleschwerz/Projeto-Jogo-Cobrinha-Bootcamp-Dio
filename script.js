@@ -56,33 +56,29 @@ function iniciarJogo(){
 
     criarBG();
     criarCobrinha();
-    drawfood();
+    drawFood();
 
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
 
     if(direction == "right") snakeX += box;
     if(direction == "left") snakeX -= box;
-    if(direction == "up") snakeY += box;
-    if(direction == "down") snakeY -= box;
-
-    
+    if (direction == "up") snakeY -= box;
+    if(direction == "down") snakeY += box;
 
     if(snakeX != food.x || snakeY != food.y){
-        snake.pop();
+        snake.pop(); //pop tira o último elemento da lista
+    }else{
+        food.x = Math.floor(Math.random() * 15 +1) * box;
+        food.y = Math.floor(Math.random() * 15 +1) * box;
     }
-    else {
-        food.x = Math.floor(Math.random() * 15 + 1) * box;
-        food.y = Math.floor(Math.random() * 15 + 1) * box;
-    }
-
+    
     let newHead ={
         x: snakeX,
         y: snakeY
-    };
+    }
 
-    snake.unshift(newHead);
-
+    snake.unshift(newHead); //método unshift adiciona como primeiro quadradinho da cobrinha
 }
 
 let jogo = setInterval(iniciarJogo, 100);
