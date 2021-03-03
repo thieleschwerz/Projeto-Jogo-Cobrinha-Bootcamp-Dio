@@ -63,8 +63,8 @@ function iniciarJogo(){
 
     if(direction == "right") snakeX += box;
     if(direction == "left") snakeX -= box;
-    if (direction == "up") snakeY -= box;
-    if(direction == "down") snakeY += box;
+    if (direction == "up") snakeY += box;
+    if(direction == "down") snakeY -= box;
 
     if(snakeX != food.x || snakeY != food.y){
         snake.pop(); //pop tira o último elemento da lista
