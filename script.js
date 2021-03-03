@@ -7,32 +7,31 @@ snake[0] ={
     y: 8 * box
 }
 
-let direction = "right"
-let food = {
+let direction = "right";
+let food ={
     x: Math.floor(Math.random() * 15 + 1) * box,
-    y: Math.floor(Math.random() * 15 + 1) * box,
-
+    y: Math.floor(Math.random() * 15 + 1) * box
 }
 
 function criarBG(){
     context.fillStyle = "lightgreen";
-    context.fillRect(0, 0, 16 * box, 16 * box); 
+    context.fillRect(0, 0, 16*box, 16*box); //desenha o retângulo usando x e y e a largura e altura setadas
 }
 
-function criarCobrinha(){
+function criarCobrinha (){
     for(i = 0; i < snake.length; i++){
         context.fillStyle = "green";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
-function drawfood(){
-    context.fillStyle = "grey";
+function drawFood (){
+    context.fillStyle = "red";
     context.fillRect(food.x, food.y, box, box);
 }
 
-
-document.addEventListener("keydown", update);
+//quando um evento acontece, detecta e chama uma função
+document.addEventListener('keydown', update);
 
 function update(event){
     if(event.keyCode == 37 && direction != 'right') direction = 'left';
