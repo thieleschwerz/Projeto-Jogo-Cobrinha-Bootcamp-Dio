@@ -20,7 +20,7 @@ function criarBG(){
 }
 
 function criarCobrinha(){
-    for(i = 0; i < snake.lenght; i++){
+    for(i = 0; i < snake.length; i++){
         context.fillStyle = "green";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
@@ -48,7 +48,7 @@ function iniciarJogo(){
     if(snake[0].y > 15 * box && direction == "down") snake[0].y = 0;
     if(snake[0].y < 0 && direction == "up") snake[0].y = 16 * box;
 
-    for(i = 1; i < snake.lenght; i++){
+    for(i = 1; i < snake.length; i++){
         if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
             clearInterval(jogo); 
             alert (' Game Over :( ')
