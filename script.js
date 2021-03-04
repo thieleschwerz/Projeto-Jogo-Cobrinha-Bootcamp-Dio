@@ -15,7 +15,7 @@ let food ={
 }
 
 function criarBG(){
-    context.fillStyle = "yellow";
+    context.fillStyle = "darkgrey";
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
@@ -27,7 +27,7 @@ function criarCobrinha (){
 }
 
 function drawFood (){
-    context.fillStyle = "darkgrey";
+    context.fillStyle = "yellow";
     context.fillRect(food.x, food.y, box, box);
 }
 
