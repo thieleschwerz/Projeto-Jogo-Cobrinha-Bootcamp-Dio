@@ -1,15 +1,11 @@
 body{
     height:  95vh;
-    width: 95vw;
+    width: 95;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border: grey;
     border-radius: 4px;
-}
-
-header{
-    background-color: white;
-    color: grey;  
+    color: rgb(43, 138, 43);
 }
