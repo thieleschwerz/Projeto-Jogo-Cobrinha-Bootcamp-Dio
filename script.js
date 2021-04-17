@@ -5,7 +5,6 @@ const scoreDisplay = document.querySelector('span') // mostrar score
 let score = 0; //acrescentando a variavel score
 let snake = [];
 
-
 snake[0] ={
     x: 8 * box,
     y: 8 * box

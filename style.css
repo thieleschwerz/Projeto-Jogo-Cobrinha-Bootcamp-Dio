@@ -9,6 +9,8 @@ body{
 }
 
 .container_principal {
+    height:  95vh;
+    width: 95;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,5 +62,3 @@ canvas {
     border-radius: 6px;
     border-color: green;
 }
-
-
