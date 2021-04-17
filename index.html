@@ -5,15 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
-    <link rel="stylescheet" href="style.css">
+    <link rel="Stylesheet" href="style.css">
     <script defer src="script.js"></script>
    
 </head>
 <body>
-    <h1>Snake Game</h1> 
-    <i class="fas fa-gamepad"></i>
-   
-    <canvas id="snake" width="512" height="512"></canvas>
+    <div class="container_principal">
+        <h1>Snake Game</h1> 
     
+        <div class="score">Score: <span>0</span></span>
+        </div> <!-- acrescentando o score na tela -->
+    
+        <div class="restart">
+         <input type="button" value="Reiniciar" onclick="location.reload()"> <!-- botao reset para recarregar a pagina -->
+        </div>
+            
+        <div class="jogo">
+        <canvas id="snake" width="512" height="512"></canvas>
+        </div>
+    </div>
+   
+  
 </body>
+
 </html>

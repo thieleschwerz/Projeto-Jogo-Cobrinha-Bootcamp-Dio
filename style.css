@@ -1,12 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    height:  95vh;
-    width: 95vw;
+    background: linear-gradient(120deg, #90EE90, white,	#98FB98);
+}
+
+.container_principal {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
-    color: grey;
-    border: grey;
-    border-radius: 4px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 2%;
 }
+
+.score {
+        font-size: 30px;
+        color: white;
+        background-color: black;
+        border-radius: 12px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+}
+
+.restart{
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    background-color:black;
+    font-size: 30px;
+    color: white;
+    border-radius: 6px;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+input:hover{
+    background-color: gray;
+}
+
+canvas {
+    border-radius: 6px;
+    border-color: green;
+}
+
+
